@@ -102,24 +102,42 @@ int main(){
     printf("Super Poder: %lu\n", valorSuperPoder1);
 
     printf("COMPARAÇÃO ENTRE AS CARTAS\n");
-    printf("Para resultado 1 = Carta 1 vencedora\n");
-    printf("Para resultado 0 = Carta 2 vencedora\n");
 
-    unsigned long int vencedorPopulação = população > população1;
-    unsigned long int vencedorArea = area > area1;
-    unsigned long int vencedorPIB = PIB > PIB1;
-    unsigned long int vencedorPontos = pontos > pontos1;
-    unsigned long int vencedorPercapita = percatipa > percatipa1;
-    unsigned long int vencedorDensidade = densidade < densidade1;
-    unsigned long int vencedorSuperpoder = valorSuperPoder > valorSuperPoder1;
-
-    printf ("População: %lu\n", vencedorPopulação);
-    printf("Area: %lu\n", vencedorArea);
-    printf("PIB: %lu\n", vencedorPIB);
-    printf("Pontos Turísticos: %lu\n", vencedorPontos);
-    printf("PIB percapita: %lu\n", vencedorPercapita);
-    printf("Densidade: %lu\n", vencedorDensidade);
-    printf("Super Poder: %lu\n", vencedorSuperpoder);
+    if (população > população1){
+        printf("População da Carta A é maior que a da Carta B.\n");
+    } else {
+        printf("População da Carta B é maior que a da Carta A.\n");
+    }
+    if (area > area1){
+        printf("Área da Carta A é maior que a da Carta B.\n");
+    } else{
+        printf("Área da Carta B é maior que a da Carta A.\n");
+    }
+     if (PIB > PIB1){
+        printf("PIB da Carta A é maior que o da Carta B.\n");
+    } else{
+        printf("PIB da Carta B é maior que o da Carta A.\n");
+    }
+     if (pontos > pontos1){
+        printf("A Carta A possui mais pontos turísticos que Carta B.\n");
+     }else{
+        printf("A Carta B possui mais pontos turísticos que Carta A.\n");
+     }
+     if (percatipa > percatipa1){
+        printf("O PIB per capita da Carta A é maior que a da Carta B.\n");
+     } else {
+        printf("A PIB per capita da Carta B é maior que a da Carta A.\n");
+     }
+     if (densidade < densidade1){
+        printf("A densidade populacional da Carta A é menor que a da Carta B.\n");
+     }else{
+        printf("A densidade populacional da Carta B é menor que a da Carta A.\n");
+     }
+     if (valorSuperPoder > valorSuperPoder1){
+        printf("o Super Poder da Carta A é maior que a da Carta B.\n");
+     }else{
+        printf("O Super Poder da Carta B é maior que a da Carta A.\n");
+     }
 
     return 0;
 
