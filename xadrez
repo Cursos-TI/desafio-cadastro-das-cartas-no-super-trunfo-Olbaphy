@@ -1,11 +1,16 @@
 #include <stdio.h>
+void moverTorre (int casas){
+    if (casas > 0){
+        printf("Direita.\n");
+        moverTorre(casas-1);
+    }
 
+}
 int main(){
    //mover a torre 5 casas para direita
    printf("Torre:\n");
-   for (int i = 1; i <= 5; i++){
-        printf("Direita.\n"); //imprime a direção do mov
-   }
+   moverTorre (5);
+
    printf("\n");
    //mover bispo 5 casas para direita e para cima
    printf("Bispo:\n");
